@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>{{meta_title}}</title>
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+		<link rel="stylesheet" href="/style.css"/>
+		{{ghost_head}}
+	</head>
+	<body class="bg-white">
+		<main class="mw9 center {{#is "home"}}pt5-ns pa4{{/is}} ph7-l">
+			{{{body}}}
+		</main>
+	
+		<section class="mw9 center tc ph7-l">
+			<div class="bt b--black-50 pv3">
+				<a href="https://twitter.com/tometo_official" class="link blue">twitter</a> &middot;
+				<a href="https://discord.gg/xqTEcaw" class="link blue">discord</a> &middot;
+				<a href="https://docs.tometo.org/conduct" class="link blue">code of conduct</a> &middot;
+				the source for this website is available <a href="https://marie.marisa.cloud/t/web" class="link blue">here</a>
+			</div>
+		</section>
+
+		<!-- very small website tracking snippet -->
+		<script>
+		(function() {
+			if (window.location.hostname.indexOf('localhost') > -1) {
+				return
+			}
+
+			var script = document.createElement('script')
+			window.counter = 'https://mokou.goatcounter.com/count'
+			script.async = 1
+			script.src = '//static.goatcounter.com/count.min.js'
+
+			var ins = document.getElementsByTagName('script')[0]
+			ins.parentNode.insertBefore(script, ins)
+		})();
+		</script>
+
+		{{ghost_foot}}
+	</body>
+</html>

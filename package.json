@@ -1,0 +1,12 @@
+{
+    "name": "tometo-theme",
+    "description": "Tometo's custom Ghost theme",
+    "version": "0.1.0",
+    "engines": {
+        "ghost-api": "v3"
+    },
+    "author": {
+        "email": "mokou@posteo.de"
+    },
+    "license": "Prosperity"
+}
