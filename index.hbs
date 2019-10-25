@@ -2,6 +2,15 @@
 
 <a name="top"></a>
 
+{{#get "posts" limit="1"}}
+	{{#foreach posts}}
+		<div class="w-100 bg-light-blue dark-gray f5 pa3 mb3 bt b--blue bw1" style="border-top-style: dashed;">
+			Check out our latest update post:
+			<a href="{{url}}" class="b link navy dim">{{title}}</a>
+		</div>
+	{{/foreach}}
+{{/get}}
+
 <h1 class="f2 f1-m f-subheadline-l lh-title mv0 georgia dt">
 	<a href="/mascot"><img class="dtc v-mid mt2" width="150" alt="The primary logo for Tometo, its mascot Tome" src="/img/tome.png"/></a>
 	<div class="dtc v-mid pl4">
