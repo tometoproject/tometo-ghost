@@ -18,6 +18,15 @@
 			text-decoration: none;
 		}
 		</style>
+
 		{{content}}
+
+		<div class="gray f4">Written by {{#foreach authors}}
+			{{#if twitter}}
+				<a href="https://twitter.com/{{twitter}}">{{name}}</a>
+			{{else}}
+				{{name}}
+			{{/if}}
+		{{/foreach}}</div>
 	</section>
 {{/post}}
