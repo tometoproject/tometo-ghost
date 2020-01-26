@@ -57,9 +57,9 @@
 		{{#foreach posts}}
 		<li class="menu-item">
 			<a href="{{url}}">
-				{{title}}
+				<span class="text-elipsis">{{title}}</span>
 			</a>
-			<div class="menu-badge text-gray">{{date format='ddd MMM D YYYY'}}</div>
+			<div class="menu-badge text-gray">{{date format='MMM D YYYY'}}</div>
 		</li>
 		{{/foreach}}
 	</ul>
