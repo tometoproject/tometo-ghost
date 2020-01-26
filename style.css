@@ -8,6 +8,19 @@
 	}
 }
 
+.v-mid {
+	vertical-align: middle;
+}
+
+.no-link {
+	color: rgb(59, 67, 81) !important;
+}
+
+.no-link:hover {
+	text-decoration: none;
+	color: rgb(59, 67, 81);
+	cursor: initial;
+}
 
 figcaption {
 	text-align: center;
@@ -15,18 +28,22 @@ figcaption {
 	color: #AAA;
 }
 
-.grid {
-	display: grid;
-	grid-template-columns: repeat(3, auto);
-	grid-row-gap: 20px;
-	grid-column-gap: 30px;
-	justify-items: center;
-	justify-content: start;
+.post-container {
+	margin-top: 40px;
 }
 
-@media screen and (max-width: 40em) {
-	.grid {
-		grid-template-columns: auto;
-		justify-items: start;
-	}
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.page h1,
+.page h2,
+.page h3,
+.page h4 {
+	font-family: merriweather, serif;
+}
+
+.post img,
+.page img {
+	max-width: 100%;
 }

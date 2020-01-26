@@ -1,32 +1,28 @@
 {{!< default}}
 
 {{#post}}
-	<section class="bb b--black">
-		<img src="/img/tome.png" alt="The primary logo for Tometo, its mascot Tome" width="30" class="v-mid"/>
-		<p class="ph1 georgia f4 dib v-mid">
-			<span class="b">Tometo</span> Updatelog
-			<a href="/" class="link blue ml2">Back to index</a>
-		</p>
-	</section>
+	<header class="navbar my-2">
+		<div class="navbar-section">
+			<a class="navbar-brand no-link"><img src="/img/tome.png" alt="The primary logo for Tometo, its mascot Tome" width="30" class="v-mid"/></a>
+			<a class="btn btn-link no-link"><strong>Tometo</strong> Updatelog</a>
+			<a class="btn btn-link" href="/">Back to index</a>
+		</div>
+	</header>
 
-	<h1 class="f2 f1-ns georgia">{{title}} <small class="f5 db fw4">{{date format='ddd MMM D YYYY'}}</small></h1>
-
-	<section class="lh-copy f4 mb4">
-		<style>
-		a {
-			color: #357edd;
-			text-decoration: none;
-		}
-		</style>
-
-		{{content}}
-
-		<div class="gray f4">Written by {{#foreach authors}}
+	<h1 class="merriweather mb-0 mt-2">{{title}}</h1>
+	<small class="chip">{{date format='ddd MMM D YYYY'}}</small>
+	<small class="chip">
+		Written by&nbsp;
+		{{#foreach authors}}
 			{{#if twitter}}
 				<a href="https://twitter.com/{{twitter}}">{{name}}</a>
 			{{else}}
 				{{name}}
 			{{/if}}
-		{{/foreach}}</div>
+		{{/foreach}}
+	</small>
+
+	<section class="post-container">
+		<span class="post">{{content}}</span>
 	</section>
 {{/post}}
