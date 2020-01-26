@@ -4,31 +4,31 @@
 
 {{#get "posts" limit="1"}}
 	{{#foreach posts}}
-		<div class="w-100 bg-light-blue dark-gray f5 pa3 mb3 bt b--blue bw1" style="border-top-style: dashed;">
+		<div class="toast mt-2 mb-2" style="border-top: 2px white; border-top-style: dashed;">
 			Check out our latest update post:
 			<a href="{{url}}" class="b link navy dim">{{title}}</a>
 		</div>
 	{{/foreach}}
 {{/get}}
 
-<h1 class="f2 f1-m f-subheadline-l lh-title mv0 georgia dt">
-	<a href="/mascot"><img class="dtc v-mid mt2" width="150" alt="The primary logo for Tometo, its mascot Tome" src="/img/tome.png"/></a>
-	<div class="dtc v-mid pl4">
+<h1 class="container columns">
+	<a href="/mascot" class="column col-2 col-xl-3 col-sm-4"><img width="150" alt="The primary logo for Tometo, its mascot Tome" src="/img/tome.png"/></a>
+	<div class="column ml-2 merriweather" style="font-size: 4rem; padding-top: 5px;">
 		Tometo
-		<small class="db f3 fw4">pronounced <i>To-mii-to</i></small>
+		<div class="text-gray" style="font-size: 1.4rem;">pronounced <i>To-mii-to</i></div>
 	</div>
 </h1>
 
-<img src="/img/tomes.png" class="fr w-40 w-40-l" />
-<p class="measure lh-copy f4">
+<img src="/img/tomes.png" class="float-right d-sm-none" />
+<p>
 	is a social network based upon text-to-speech functionality. Created as a
-	homage to Nintendo's <span class="i">Miitomo</span> mobile game, it's currently
+	homage to Nintendo's <i>Miitomo</i> mobile game, it's currently
 	in development as an independent project from a couple of developers.
 </p>
 
-<section class="mv2">
-	<a name="about"></a><h2 class="f3 f2-ns lh-title georgia">What <span class="i">is</span> it?</h2>
-	<p class="measure lh-copy f4">
+<section>
+	<a name="about"></a><h2 class="merriweather">What <i>is</i> it?</h2>
+	<p>
 		It's a website that you can open on your browser or your phone. Unlike Twitter
 		or other social networks, you create a "character" that will speak your status updates
 		using text-to-speech technology! You can adjust the pitch and tone of your character's
@@ -37,50 +37,101 @@
 	</p>
 </section>
 
-<section class="mv2">
-	<a name="usage"></a><h2 class="f3 f2-ns lh-title georgia">Cool, how do I use it?</h2>
-	<p class="measure lh-copy f4">
+<section>
+	<a name="usage"></a><h2 class="merriweather">Cool, how do I use it?</h2>
+	<p>
 		Tometo is currently in <strong>active development</strong>! At this point
 		there's no public beta or alpha, although we will certainly update this website
 		once we get to that point. We also can't give any timeframe on when we'll get to
 		that milestone. However, it is developed as source-available software,
-		the source is available <a href="https://github.com/tometoproject/tometo" class="link blue">here</a>.
+		the source is available <a href="https://marisa.cloud/source/tometo" class="link blue">here</a>.
 	</p>
 </section>
 
-<section class="mv2">
-	<a name="updates"></a><h2 class="f3 f2-ns lh-title georgia">Do you post updates anywhere?</h2>
-	<p class="measure lh-copy f4">
+<section>
+	<a name="updates"></a><h2 class="merriweather">Do you post updates anywhere?</h2>
+	<p class="mb-2">
 		Yes! This website houses an update log:
 	</p>
-	<ul>
+	<ul class="menu mb-2">
 		{{#foreach posts}}
-		<li class="f3 mb3">
-			<a class="link blue" href="{{url}}">
+		<li class="menu-item">
+			<a href="{{url}}">
 				{{title}}
 			</a>
-			<small class="f5 i gray">{{date format='ddd MMM D YYYY'}}</small>
+			<div class="menu-badge text-gray">{{date format='ddd MMM D YYYY'}}</div>
 		</li>
 		{{/foreach}}
 	</ul>
-	<p class="measure lh-copy f4">
-		Alternatively, you can follow us on <a href="https://twitter.com/tometo_official" class="link blue">Twitter</a>
-		or chat with us on <a href="https://discord.gg/xqTEcaw" class="link blue">Discord</a>.
+	<p class="pt-2">
+		Alternatively, you can follow us on <a href="https://twitter.com/tometo_official">Twitter</a>
+		or chat with us on <a href="https://discord.gg/xqTEcaw">Discord</a>.
 	</p>
 </section>
 
-<section class="mv2">
-	<a name="team"></a><h2 class="f3 f2-ns lh-title georgia">Who makes this?</h2>
-	<p class="measure lh-copy f4">
+<section>
+	<a name="team"></a><h2 class="merriweather">Who makes this?</h2>
+	<p>
 		Tometo is developed and produced by
-		<a class="link blue dim" href="https://twitter.com/mokou_outdoors">Aun</a>,
-		<a class="link blue dim" href="https://twitter.com/touhoueurobeat">agm</a>,
-		<a class="link blue dim" href="https://twitter.com/mintdecot">Mint</a>,
-		<a class="link blue dim" href="https://twitter.com/technoabyss">Ada</a>,
-		<span>Freya</span>,
-		<span>Claire</span>,
-		and
-		<a class="link blue dim" href="https://twitter.com/heedthereturn">Ruby</a>.
 	</p>
+		<a href="https://twitter.com/faint_visions" class="tile tile-centered mb-1">
+			<div class="tile-icon">
+				<img src="https://twitter-avatar.now.sh/faint_visions" width=50>
+			</div>
+			<div class="tile-content">
+				<div class="tile-title">Aun</div>
+				<small class="tile-subtitle text-gray">@faint_visions, Developer</small>
+			</div>
+		</a>
+
+		<a href="https://twitter.com/touhoueurobeat" class="tile tile-centered mb-1">
+			<div class="tile-icon">
+				<img src="https://twitter-avatar.now.sh/touhoueurobeat" width=50>
+			</div>
+			<div class="tile-content">
+				<div class="tile-title">agm</div>
+				<small class="tile-subtitle text-gray">@touhoueurobeat, Developer</small>
+			</div>
+		</a>
+
+		<a href="https://twitter.com/mintdecot" class="tile tile-centered mb-1">
+			<div class="tile-icon">
+				<img src="https://twitter-avatar.now.sh/mintdecot" width=50>
+			</div>
+			<div class="tile-content">
+				<div class="tile-title">Mint</div>
+				<small class="tile-subtitle text-gray">@mintdecot, Artist</small>
+			</div>
+		</a>
+
+		<a href="https://twitter.com/technoabyss" class="tile tile-centered mb-1">
+			<div class="tile-icon">
+				<img src="https://twitter-avatar.now.sh/technoabyss" width=50>
+			</div>
+			<div class="tile-content">
+				<div class="tile-title">Ada</div>
+				<small class="tile-subtitle text-gray">@technoabyss, Developer</small>
+			</div>
+		</a>
+
+		<a href="https://twitter.com/photonicDog" class="tile tile-centered mb-1">
+			<div class="tile-icon">
+				<img src="https://twitter-avatar.now.sh/photonicDog" width=50>
+			</div>
+			<div class="tile-content">
+				<div class="tile-title">Freya</div>
+				<small class="tile-subtitle text-gray">@photonicDog, Freya</small>
+			</div>
+		</a>
+
+		<div class="tile tile-centered mb-1">
+			<div class="tile-icon">
+				<img src="https://twitter-avatar.now.sh/flower_of_edo" width=50>
+			</div>
+			<div class="tile-content">
+				<div class="tile-title">Claire</div>
+				<small class="tile-subtitle text-gray">Volunteer</small>
+			</div>
+		</div>
 </div>
 </section>

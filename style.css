@@ -1,10 +1,13 @@
-body {
-	font-family: 'Noto Sans', sans-serif;
+.merriweather {
+	font-family: 'Merriweather', serif;
 }
 
-.noto-sans {
-	font-family: 'Noto Sans', sans-serif;
+@media screen and (max-width: 600px) {
+	.d-sm-none {
+		display: none;
+	}
 }
+
 
 figcaption {
 	text-align: center;
