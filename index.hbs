@@ -54,7 +54,7 @@
 		Yes! This website houses an update log:
 	</p>
 	<ul class="menu mb-2">
-		{{#foreach posts}}
+		{{#foreach posts limit="10"}}
 		<li class="menu-item">
 			<a href="{{url}}">
 				<span class="text-elipsis">{{title}}</span>
