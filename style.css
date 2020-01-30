@@ -1,3 +1,11 @@
+:root {
+	--base-red: #FF4036;
+	--light-red: #FF635B;
+	--very-light-red: #FF8B85;
+	--dark-red: #EA1308;
+	--very-dark-red: #B40A01;
+}
+
 .merriweather {
 	font-family: 'Merriweather', serif;
 }
@@ -46,4 +54,38 @@ figcaption {
 .post img,
 .page img {
 	max-width: 100%;
+}
+
+a,
+a:visited,
+.btn.btn-link {
+	color: var(--light-red);
+}
+
+a:hover,
+.btn.btn-link:hover {
+	color: var(--dark-red);
+}
+
+.toast {
+	background-color: var(--very-light-red);
+	border-color: var(--very-light-red);
+}
+
+.toast a {
+	color: white;
+	font-weight: bold;
+}
+
+.menu .menu-item > a:hover {
+	background-color: var(--very-light-red);
+	color: white;
+}
+
+.menu-badge {
+	margin-right: 10px;
+}
+
+.menu-item:hover .menu-badge {
+	color: white !important;
 }
