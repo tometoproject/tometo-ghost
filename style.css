@@ -77,7 +77,8 @@ a:hover,
 	font-weight: bold;
 }
 
-.menu .menu-item > a:hover {
+.menu .menu-item > a:hover,
+.menu .menu-item > a:focus {
 	background-color: var(--very-light-red);
 	color: white;
 }
