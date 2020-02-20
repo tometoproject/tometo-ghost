@@ -12,12 +12,6 @@
 	font-family: 'Merriweather', serif;
 }
 
-@media screen and (max-width: 600px) {
-	.d-sm-none {
-		display: none;
-	}
-}
-
 .v-mid {
 	vertical-align: middle;
 }
@@ -141,4 +135,15 @@ a:hover,
 
 .menu-item:hover .menu-badge {
 	color: white !important;
+}
+
+@media screen and (max-width: 600px) {
+	.d-sm-none {
+		display: none;
+	}
+
+	.main-nav .navbar-section {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 }
