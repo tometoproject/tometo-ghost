@@ -4,6 +4,7 @@
 	--very-light-red: #FF8B85;
 	--dark-red: #EA1308;
 	--very-dark-red: #B40A01;
+	--black: #4a4a4a;
 }
 
 .merriweather {
@@ -36,6 +37,51 @@ figcaption {
 	color: #AAA;
 }
 
+/* Main navbar */
+
+.main-nav {
+	border-top: 3px solid var(--light-red);
+	align-items: center;
+}
+
+.main-nav .navbar-section {
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+
+.main-nav .navbar-section > a {
+	color: var(--black);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	vertical-align: middle;
+	font-size: 1rem;
+	height: 100%;
+}
+
+.main-nav .navbar-section > a:hover {
+	color: var(--light-red);
+}
+
+/* Hero */
+.hero {
+	background-color: var(--black);
+	color: white;
+	margin-top: 0;
+}
+
+.hero h1 {
+	font-size: 2.5rem;
+	font-family: 'Merriweather', serif;
+	margin-top: 20px;
+}
+
+.hero p {
+	font-size: 1.3rem;
+	margin: 0 50px;
+}
+
+/* Post and page fixes */
+
 .post-container {
 	margin-top: 40px;
 }
@@ -67,6 +113,8 @@ a:hover,
 	color: var(--dark-red);
 }
 
+/* Toasts */
+
 .toast {
 	background-color: var(--very-light-red);
 	border-color: var(--very-light-red);
@@ -76,6 +124,8 @@ a:hover,
 	color: white;
 	font-weight: bold;
 }
+
+/* Menu stuff */
 
 .menu .menu-item > a:hover,
 .menu .menu-item > a:focus {

@@ -4,20 +4,22 @@
 
 {{#get "posts" limit="1"}}
 	{{#foreach posts}}
-		<div class="toast mt-2 mb-2" style="border-top: 2px white; border-top-style: dashed;">
+		<div class="toast mt-2">
 			Check out our latest update post:
 			<a href="{{url}}">{{title}}</a>
 		</div>
 	{{/foreach}}
 {{/get}}
 
-<h1 class="container columns">
-	<a href="/mascot" class="column col-2 col-xl-3 col-sm-4"><img width="150" alt="The primary logo for Tometo, its mascot Tome" src="/img/tome.png"/></a>
-	<div class="column ml-2 merriweather" style="font-size: 4rem; padding-top: 5px;">
-		Tometo
-		<div class="text-gray" style="font-size: 1.4rem;">pronounced <i>To-mii-to</i></div>
-	</div>
-</h1>
+<div class="hero text-center">
+	<img src="/img/tome.png" width=100 class="p-centered">
+	<h1>Tometo</h1>
+	<p>
+		A social network based on text-to-speech functionality. Made as a homage to Nintendo's
+		<i>Mii</i> series of games, it runs in your browser and enables you to partake in many
+		fun activities involving your virtual self.
+	</p>
+</div>
 
 <img src="/img/tomes.png" class="float-right d-sm-none" />
 <p>
