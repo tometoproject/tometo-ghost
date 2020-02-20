@@ -109,6 +109,14 @@ a:hover,
 	color: var(--dark-red);
 }
 
+/* Menus */
+
+.menu-borderless {
+	border: 0;
+	box-shadow: none;
+	min-width: 240px;
+}
+
 /* Toasts */
 
 .toast {
