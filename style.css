@@ -8,8 +8,13 @@
 	--light-gray: #fafafa;
 }
 
-.merriweather {
+.merriweather,
+.merriweather *{
 	font-family: 'Merriweather', serif;
+}
+
+* {
+	font-family: 'InterRegular', serif;
 }
 
 .v-mid {
@@ -80,6 +85,10 @@ figcaption {
 
 .post-container {
 	margin-top: 40px;
+}
+
+.post-container p {
+	font-size: 1rem;
 }
 
 .post h1,
