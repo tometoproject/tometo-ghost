@@ -87,7 +87,8 @@ figcaption {
 	margin-top: 40px;
 }
 
-.post-container p {
+.post-container p,
+.page p {
 	font-size: 1rem;
 }
 
