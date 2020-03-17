@@ -106,7 +106,9 @@ figcaption {
 }
 
 .post-container p,
-.page p {
+.page p,
+.post-container li,
+.page li {
 	font-size: 1rem;
 }
 
